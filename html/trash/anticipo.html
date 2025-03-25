@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/anticipo.css"> 
+</head>
+<body>
+    <div class="recibo-container">
+        <!-- <img src="../assets/images/LogoOlivos.png" alt="Logo de Olivos" class="logo"> -->
+        <h2 class="titulo">Recibo de Pago</h2>
+        
+        <div class="detalle">
+            <p><strong>Número de Recibo:</strong> <span id="numRecibo"></span></p>
+            <p><strong>Fecha:</strong> <span id="fecha"></span></p>
+            <p><strong>ID Cliente:</strong> <span id="idCliente"></span></p>
+            <p><strong>Nombre Cliente:</strong> <span id="nombreCliente"></span></p>
+            <p><strong>Contrato:</strong> <span id="numContrato"></span></p>
+        </div>
+
+        <div class="detalle">
+            <p><strong>Anticipo:</strong> $<span id="anticipo"></span></p>
+            <p><strong>Total Recaudos:</strong> $<span id="totalRecaudos"></span></p>
+            <p><strong>Fecha Inicio:</strong> <span id="fechaInicio"></span></p>
+            <p><strong>Fecha Fin:</strong> <span id="fechaFin"></span></p>
+        </div>
+
+        <div class="detalle">
+            <p><strong>Pago en Efectivo:</strong> $<span id="pagoEfectivo"></span></p>
+            <p><strong>Pago con Tarjeta:</strong> $<span id="pagoTarjeta"></span></p>
+            <p><strong>Pago con Cheque:</strong> $<span id="pagoCheque"></span></p>
+            <p><strong>Valor Cuota:</strong> $<span id="valorCuota"></span></p>
+        </div>
+
+        <div class="detalle">
+            <p><strong>Observación:</strong> <span id="observacion"></span></p>
+            <p><strong>Asesor:</strong> <span id="asesor"></span></p>
+        </div>
+
+        <button class="print-button no-print" onclick="window.print()">Imprimir</button>
+        <p class="footer">SerfunCoop-Los Olivos Ibagué</p>
+    </div>
+
+    <script>
+        const data = {
+            "no": "987654",
+            "fecha": "27/02/2025",
+            "id_client": "123456789",
+            "nombre_client": "María Gómez",
+            "numContrato": "CON-001122",
+            "anticipo": "450000",
+            "total_recaudos": "450000",
+            "date1": "01/02/2025",
+            "date2": "01/08/2025",
+            "pagoEfec": "150000",
+            "pagoTarjeta": "200000",
+            "pagoCheque": "100000",
+            "valor_couta": "75000",
+            "observacion": "Pago realizado sin inconvenientes",
+            "asesor": "Luis Henao"
+        };
+
+        document.getElementById("numRecibo").textContent = data.no;
+        document.getElementById("fecha").textContent = data.fecha;
+        document.getElementById("idCliente").textContent = data.id_client;
+        document.getElementById("nombreCliente").textContent = data.nombre_client;
+        document.getElementById("numContrato").textContent = data.numContrato;
+        document.getElementById("anticipo").textContent = data.anticipo;
+        document.getElementById("totalRecaudos").textContent = data.total_recaudos;
+        document.getElementById("fechaInicio").textContent = data.date1;
+        document.getElementById("fechaFin").textContent = data.date2;
+        document.getElementById("pagoEfectivo").textContent = data.pagoEfec;
+        document.getElementById("pagoTarjeta").textContent = data.pagoTarjeta;
+        document.getElementById("pagoCheque").textContent = data.pagoCheque;
+        document.getElementById("valorCuota").textContent = data.valor_couta;
+        document.getElementById("observacion").textContent = data.observacion;
+        document.getElementById("asesor").textContent = data.asesor;
+    </script>
+</body>
+</html>

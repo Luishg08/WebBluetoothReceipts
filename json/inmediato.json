@@ -1,0 +1,34 @@
+{
+    "paymentNumber": 987654,
+    "date": "2025-02-27",
+    "cardCode": "123456789",
+    "cardName": "Luis Henao",
+    "docentryContract": "746754",
+    "anticipeValue": 450000,
+    "totalValue": 450000,
+    "dateStart": "2025-02-01",
+    "dateEnd": "2025-08-01",
+    "cashPayment": 150000,
+    "cardPayment": 200000,
+    "checkPayment": 100000,
+    "quotaValue": 75000,
+    "comments": "Pago realizado sin inconvenientes",
+    "manCollectName": "Luis Henao",
+    "invoices": [
+      {
+        "transId": 78901,
+        "sumApplied": 150000,
+        "sumPending": 0,
+        "dateStart": "01-02-2025",
+        "dateEnd": "01-03-2025"
+      },
+      {
+        "transId": 78902,
+        "sumApplied": 150000,
+        "sumPending": 0,
+        "dateStart": "01-02-2025",
+        "dateEnd": "01-03-2025"
+      }
+    ]
+  }
+  

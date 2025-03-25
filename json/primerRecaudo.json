@@ -1,0 +1,41 @@
+{
+  "docentryContract": 987654,
+  "planName": "Plan Premium Educativo",
+  "client": {
+    "typeDocument": "CC",
+    "cardCode": "123456789",
+    "firstName": "Luis",
+    "lastName": "Henao",
+    "email": "luis.hg08@outlook.com",
+    "address": "Calle 45 #12-34",
+    "neighborhood": "Centro",
+    "residenceCity": "Manizales",
+    "cellPhone": "3101234567"
+  },
+  "beneficiaries": [
+    {
+      "document": "987654321",
+      "firstName": "Carlos",
+      "lastName": "Gómez",
+      "age": "15",
+      "relative": "Padre"
+    },
+    {
+      "document": "123789456",
+      "firstName": "Mariana",
+      "lastName": "López",
+      "age": "10",
+      "relative": "Madre"
+    }
+  ],
+  "agreement": "Educación Digital 2025",
+  "date": "2025-02-26",
+  "dateStart": "2025-03-01",
+  "dateEnd": "2026-03-01",
+  "account": "0000000",
+  "sucursal": "Sucursal Manizales",
+  "quotaValue": "250000",
+  "totalValue": "250000",
+  "manCollectName": "Luis Henao",
+  "comments": "Pago realizado con éxito lucho"
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impresión de Ticket</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .ticket {
+            width: 58mm; /* Ajustar según la impresora */
+            font-size: 14px;
+            text-align: left;
+        }
+        /* Ocultar el botón al imprimir */
+        @media print {
+            .no-print {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="no-print">Prueba de Impresión</h1>
+    <button class="no-print" onclick="imprimir()">Imprimir Ticket</button>
+
+    <div id="ticket" class="ticket">
+        <h2>🌟 Mi Negocio 🌟</h2>
+        <p>Fecha: <span id="fecha"></span></p>
+        <p>--------------------------------------</p>
+        <p>Producto 1 ............ $10.00</p>
+        <p>Producto 2 ............ $20.00</p>
+        <p>--------------------------------------</p>
+        <p><strong>Total: $30.00</strong></p>
+        <p>¡Gracias por su compra!</p>
+    </div>
+
+    <script>
+        document.getElementById("fecha").innerText = new Date().toLocaleString();
+
+        function imprimir() {
+            window.print(); // Abre la ventana de impresión
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+.lucho{
+    color: seagreen;
+    font-size: 20px;
+    text-align: center;;
+}
+
+.lucho2{
+    text-align: center;
+    color: cadetblue;
+}
+
+#printer-button{
+    background-color: burlywood;
+    border-color: black;
+    border-radius: 10px;
+    padding: 10px;
+    /* grosor del borde */
+    border-width: 2px;
+}
+
+.lucho3{
+    color: darkblue;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Fondo semi-transparente */
+.selectPrinters {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    align-items: center;
+    justify-content: center;
+}
+
+/* Contenido del modal */
+.selectPrinters-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    text-align: center;
+    min-width: 300px;
+    position: relative;
+}
+
+/* Botón de cerrar */
+.cerrar {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#printers-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
